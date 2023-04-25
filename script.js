@@ -24,7 +24,7 @@ const navbarScrollEvent = () => {
 
 // Progress bar
 const progress = document.querySelector(".progress-bars-wrapper");
-const progressBarPercents = [97, 89, 85, 87, 80, 70, 50];
+const progressBarPercents = [95, 90, 85, 75, 75, 70, 70];
 
 const progressScrollEvent = () => {
   if (window.scrollY + window.innerHeight >= progress.offsetTop) {
