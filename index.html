@@ -126,7 +126,8 @@
                     </div>
                     <img src="images/project-1.png" class="project-img"
                         alt="Hong Kong cervical cancer screening website">
-                    <a href="https://www.cervicalscreening.gov.hk/en/index.html" class="project-link" target="_blank">Go to website</a>
+                    <a href="https://www.cervicalscreening.gov.hk/en/index.html" class="project-link" target="_blank">Go
+                        to website</a>
                 </div>
 
                 <div class="project center">
@@ -136,7 +137,8 @@
                             GraphQL</h4>
                     </div>
                     <img src="images/project-2.png" class="project-img" alt="Pet the Cheems">
-                    <a href="https://pet-the-cheems.herokuapp.com/" class="project-link" target="_blank">Go to website</a>
+                    <a href="https://pet-the-cheems.herokuapp.com/" class="project-link" target="_blank">Go to
+                        website</a>
                 </div>
 
                 <div class="project center">
@@ -162,11 +164,12 @@
 
                 <div class="project center">
                     <div class="project-text">
-                        <h2 class="project-name"  id="project-5-name">Residential College Landing Page</h2>
+                        <h2 class="project-name" id="project-5-name">Residential College Landing Page</h2>
                         <h4 class="project-technologies">HTML / CSS / JS</h4>
                     </div>
                     <img src="images/project-5.png" class="project-img" alt="Residential College Landing Page">
-                    <a href="https://wongpakho814.github.io/residential-college-landing-page/" class="project-link" target="_blank">Go to
+                    <a href="https://wongpakho814.github.io/residential-college-landing-page/" class="project-link"
+                        target="_blank">Go to
                         website</a>
                 </div>
 
@@ -206,7 +209,8 @@
                         <h4 class="project-technologies">HTML / CSS / JS</h4>
                     </div>
                     <img src="images/project-9.png" class="project-img" alt="Food Selling Page">
-                    <a href="https://wongpakho814.github.io/food-selling-page/" class="project-link" target="_blank">Go to
+                    <a href="https://wongpakho814.github.io/food-selling-page/" class="project-link" target="_blank">Go
+                        to
                         website</a>
                 </div>
             </div>
@@ -216,10 +220,10 @@
         <!-- Section 4 -->
         <section class="section-4" id="section-4">
             <h1 class="section-heading section-4-heading">Contact Me</h1>
-            <form class="contact-form center">
-                <input type="text" placeholder="Your name">
-                <input type="email" placeholder="Your email">
-                <textarea placeholder="Your message here :)"></textarea>
+            <form class="contact-form center" onsubmit="sendEmail(); return false;">
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="email" id="email" placeholder="Your email" required>
+                <textarea id="message" placeholder="Your message here :)" required></textarea>
                 <input type="submit" value="Submit" class="contact-form-btn">
             </form>
         </section>
@@ -245,6 +249,12 @@
         <!-- End of footer -->
     </div>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("QV_9RL2dBChbFndDt");
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
 
