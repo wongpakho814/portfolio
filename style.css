@@ -238,6 +238,21 @@ html {
   align-items: center;
 }
 
+.section-3-heading {
+  margin-bottom: 10rem;
+}
+
+.project-stack {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 5rem 0rem;
+  border-bottom: 0.3rem solid #333;
+  text-shadow: 0rem 0.2rem 0.1rem #555;
+}
+
 .projects-wrapper {
   width: 80%;
   flex-wrap: wrap;
@@ -262,13 +277,13 @@ html {
   width: 90%;
   letter-spacing: 0.1rem;
   position: absolute;
-  top: -10rem;
+  top: -12rem;
   z-index: 10;
   transition: top 0.3s;
 }
 
 .project:hover .project-text {
-  top: 5rem;
+  top: 4rem;
   transition: top 0.3s 0.1s;
 }
 
@@ -287,6 +302,11 @@ html {
   font-size: 2.5rem;
 }
 
+.project-origin {
+  font-size: 1.8rem;
+  color: #333;  
+}
+
 .project-technologies {
   font-size: 1.8rem;
   color: #e41c6f;
@@ -294,7 +314,7 @@ html {
 
 .project-img {
   width: 50rem;
-  height: 23rem;
+  height: 25rem;
   object-fit: cover;
   transition: opacity 0.3s;
 }
