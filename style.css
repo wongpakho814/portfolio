@@ -450,6 +450,10 @@ html {
   .progress-bar {
     width: 50rem;
   }
+
+  .project-text {
+    top: -16rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
